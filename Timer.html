@@ -9,9 +9,12 @@
 </head>
 
 <body>
-    <h1>
-        Countdown Timer
-    </h1>
+    <h1>Countdown Timer</h1>
+    <form>
+        <label for="time">Time:</label>
+        <input type="datetime-local" id="time" name="time">
+        <input type="submit" value="Submit">
+    </form><br>
     <button type="button" onclick="currentTime()">Click for the Time</button>
     <p id="Time"></p>
 </body>
