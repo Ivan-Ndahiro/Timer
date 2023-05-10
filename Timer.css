@@ -7,6 +7,14 @@ h1{
     font-size: 32px;
     font-weight: bold;
 }
-p{
+form, p{
     font-size: medium;
+    text-align: center;
+}
+.wrapper{
+    text-align: center;
+}
+.button{
+    position: absolute;
+    top: 150%;
 }
