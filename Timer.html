@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Countdown Timer</title>
-    <link rel="stylesheet" href="Timer.css">
-    <link rel="icon" type="image/png" href="./clock.png">
-    <script type="text/javascript" src="Timer.js"></script>
-</head>
-
-<body>
-    <h1>Countdown Timer</h1>
-    <form>
-        <label for="time">Date & Time:</label>
-        <input type="datetime-local" id="time" name="time">
-        <input type="submit" value="Submit">
-    </form><br>
-    <div class="wrapper">
-        <button type="button" onclick="currentTime()">Click for the Time</button>
-    </div>
-    <p id="Time"></p>
-</body>
-
+    <head>
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="Timer.css">
+        <link rel="icon" type="image/png" href="./clock.png">
+        <script type="text/javascript" src="Timer.js"></script>
+    </head>
+    <body>
+        <h1>Countdown Timer</h1>
+        <h2 id="MyTime"></h2>
+        <div class="wrapper">
+            <button type="button" onclick="count()">Click for Countdown</button>
+            <button type="button" onclick="nowTime()">Click for Current Time</button>
+        </div>
+        <p id="Time"></p>
+    </body>
 </html>
+
+<!--<form>
+            <label for="inputTime">Time:</label>
+            <input type="number" id="inputTime" name="inputTime" max="300" placeholder="days">
+            <input type="number" id="inputTime" name="inputTime" max="23" placeholder="hours">
+            <input type="number" id="inputTime" name="inputTime" max="59" placeholder="mins">
+            <input type="number" id="inputTime" name="inputTime" max="59" placeholder="secs">
+            <input type="submit" value="Submit">
+        </form><br>
+
+        <div class="countdown">
+            <h2 class="year">NaN</h2>
+                <h2>Years</h2>
+            <h2 class="month">NaN</h2>
+                <h2>Months</h2>
+            <h2 class="day">Nan</h2>
+                <h2>Days</h2>
+            <h2 class="hour">NaN</h2>
+                <h2>Hours</h2>
+            <h2 class="minute">NaN</h2>
+                <h2>Minutes</h2>
+            <h2 class="second">NaN</h2>
+                <h2>Seconds</h2>
+            <div class="wrapper">
+                <button type="button" onclick="nowTime()">Click for the Time</button>
+            </div>
+            <p id="Time"></p>
+        </div>
+-->
