@@ -2,13 +2,19 @@ function nowTime(){
     document.getElementById("Time").innerHTML=Date();
     setInterval(nowTime,1000);
 }
-function count(){  
-    var input = "June 21, 2024 00:00:00";
-    input= document.getElementById('time');
-    console.log(input);
+function count(){
+    x = document.getElementById("fulltime").value;
+    dateObj = new Date(x);
 
-    const futureTime = new Date("June 21, 2024 00:00:00").getTime();
-    console.log(futureTime);
+    m=dateObj.getMonth()+1;
+    d=dateObj.getDate();
+    y=dateObj.getFullYear();
+    h=dateObj.getHours();
+    mi=dateObj.getMinutes();
+    
+    selectedDate=m+" "+d+", "+y+" "+h+":"+mi;
+
+    const futureTime = new Date(selectedDate).getTime();
     const currentTime = new Date().getTime();
     const diff = futureTime - currentTime;
 
@@ -28,17 +34,10 @@ function count(){
 
     document.getElementById("MyTime").innerHTML= Years + " years " + Months + " months " + Days + " days "
     + Hours + " hours " + Minutes + " minutes " + Seconds + " seconds ";
+
     if (diff<0){
     document.getElementById("MyTime").innerHTML="Done!";
     }
 
     setInterval(count, 1000);
 }
-
-
-/*
-const futureTime = new Date('June 21, 2024 00:00:00').getTime();
-    console.log(futureTime);
-    const currentTime = new Date().getTime();
-    const diff = futureTime - currentTime;
-*/
